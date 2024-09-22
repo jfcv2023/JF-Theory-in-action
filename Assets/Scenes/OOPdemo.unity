@@ -288,6 +288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d427ce94679ec6e48b77e44def28d702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animalName: Dog
+  health: 100
 --- !u!114 &527039568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6117433fdfcdba4479803088e7167f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animalName: Cat
+  health: 80
 --- !u!114 &527039569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6320d65d1e3f5cb4eb4ceefc8e41180f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animalName: 
+  health: 0
 --- !u!114 &527039570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b8c7e58ae7fc74d95b6819e853418b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiTextInfo: {fileID: 377666583}
 --- !u!4 &527039571
 Transform:
   m_ObjectHideFlags: 0
