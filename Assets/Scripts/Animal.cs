@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour
+public class Animal
 {
-    // Encapsulated fields (Encapsulation)
     private string animalName;
     private int health;
 
-    // Constructor to set basic properties (Abstraction)
     public Animal(string name, int health)
     {
         this.animalName = name;
         this.health = health;
     }
 
-    // Encapsulation: Getters and setters for protected fields
     public string GetName()
     {
         return animalName;
@@ -26,22 +23,22 @@ public class Animal : MonoBehaviour
         return health;
     }
 
-    public void TakeDamage(int damage)
+    public string TakeDamage(int damage)
     {
         health -= damage;
         if (health < 0)
             health = 0;
-        Debug.Log(animalName + " took " + damage + " damage! Health left: " + health);
+        return animalName + " took " + damage + " damage! Health left: " + health;
     }
 
-    // Abstraction: Common animal behavior
-    public virtual void MakeSound()
+    // Polymorphic method
+    public virtual string MakeSound()
     {
-        Debug.Log(animalName + " makes a sound!");
+        return animalName + " makes a sound!";
     }
 
-    public virtual void Move()
+    public virtual string Move()
     {
-        Debug.Log(animalName + " is moving.");
+        return animalName + " is moving.";
     }
 }
